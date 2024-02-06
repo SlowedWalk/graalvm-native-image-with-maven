@@ -11,6 +11,9 @@ spring:
   threads:
     virtual:
       enabled: true
+
+  mvc:
+    static-path-pattern: /swagger*
 spring-boot:
   version: 3.2.2
 
