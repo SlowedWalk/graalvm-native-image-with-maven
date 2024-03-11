@@ -3,21 +3,8 @@ server:
 spring:
   application:
     name: customer-service
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-  datasource:
-    url: jdbc:h2:mem:customers-db
   threads:
     virtual:
       enabled: true
-
-  mvc:
-    static-path-pattern: /swagger*
 spring-boot:
   version: 3.2.2
-
-springdoc:
-  swagger-ui:
-    enabled: true
-    path: /swagger-ui.html
